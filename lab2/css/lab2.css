@@ -1,0 +1,19 @@
+h1 {
+    color: rgb(225, 176, 237);
+    font-size: 200%;
+}
+p {
+   font-family: "fantasy"; 
+   text-indent: 400px;
+   margin-left: 200px;
+}
+
+#content {
+    background-color: mediumpurple;
+    width: 1000px;
+    min-height: 1000px;
+    padding: 20px;
+    margin: 20px;
+    border: solid 4px #000000;
+    font-size: 50px;
+}
