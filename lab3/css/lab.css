@@ -3,4 +3,5 @@
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 #my-portrait {
   max-width: 300px;
+  border: 5px;
 }
