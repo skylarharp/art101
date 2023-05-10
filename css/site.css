@@ -1,15 +1,15 @@
-/* we can use a single css file to style all the files in our wwebsite */
+/* we can use a single css file to style all the files in our website */
 
 /* you can pick your own background colors, text colors, and fonts */
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
-  background-color: #096126;
+  background-color: #6b4421;
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
 h1,h2,h3 {
-  font-family: sans-serif;
+  font-family: Helvetica;
 }
 
 /* and we can have rules that overlap other rules, both take effect */
@@ -23,8 +23,8 @@ h1 {
 #content {
   margin: 10px;
   padding: 10px;
-  border: solid 1px #888;
-  background-color: #f1f2f4;
+  border: solid 1px #6c6c6c;
+  background-color: #ffffff;
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
@@ -32,5 +32,5 @@ h1 {
   padding: 10px;
   margin-bottom: 10px;
   border: solid 1px #888;
-  background-color: #73cb8c;
+  background-color: #a7876a;
 }
