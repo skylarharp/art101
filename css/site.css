@@ -4,7 +4,7 @@
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
-  background-color: #6b4421;
+  background-color: #801c34;
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
@@ -32,5 +32,5 @@ h1 {
   padding: 10px;
   margin-bottom: 10px;
   border: solid 1px #888;
-  background-color: #a7876a;
+  background-color: #e1b2df;
 }
