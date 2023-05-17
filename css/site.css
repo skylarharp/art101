@@ -4,8 +4,19 @@
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
-  background-color: #801c34;
+  background-color: #eac2cc;
+  font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(223, 105, 121);
+    font-size: 100%;
 }
+
+#content {
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px #040404;
+  background-color: #fbbdbd;
+}
+
 
 /* we can have rules apply to multiple elements at the same time with commas */
 h1,h2,h3 {
@@ -19,18 +30,20 @@ h1 {
   font-size: 200%;
 }
 
-/* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
-#content {
-  margin: 10px;
-  padding: 10px;
-  border: solid 1px #6c6c6c;
-  background-color: #ffffff;
-}
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
+.sectionbox {
   padding: 10px;
   margin-bottom: 10px;
-  border: solid 1px #888;
-  background-color: #e1b2df;
+  border: solid 1px #000000;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+/* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+
+
+.special {
+  background-color: #a7d5f2;
+  border: solid 1px rgb(255, 255, 255);
 }
