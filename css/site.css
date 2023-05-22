@@ -6,7 +6,7 @@
 body {
   background-color: #eac2cc;
   font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(223, 105, 121);
+    background-color: rgb(0, 0, 0);
     font-size: 100%;
 }
 
@@ -14,7 +14,7 @@ body {
   margin: 10px;
   padding: 10px;
   border: solid 1px #040404;
-  background-color: #fbbdbd;
+  background-color: #9ae39f;
 }
 
 
@@ -35,7 +35,7 @@ h1 {
   padding: 10px;
   margin-bottom: 10px;
   border: solid 1px #000000;
-  background-color: #ffffff;
+  background-color: #0f5108;
   border-radius: 10px;
 }
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
