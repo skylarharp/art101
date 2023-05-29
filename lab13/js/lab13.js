@@ -1,64 +1,46 @@
 /**
  * Author: Skylar Harp
- * Created: 05/24/2023
+ * Created: 05/29/2023
  * 
  **/
 
+function fizzBuzzBoom () {
+    var audi = "";
 
+    for (var num = 1;num<=200; num++) {
 
-maxFactors = 4;
-
-outputEl = document.getElementById("output");
-
-// get the values from the webpage and write them in an object
-// this expects to have input fields with ids num0, text0, num1, text1, etc
-// returns an object that looks like this:
-//      {3: "Fizz", 5: "Buzz", 7: "Boom"}
-function getFactorObj() {
-    var factorObj = {};
-    for (var factor=0; factor<maxFactors; factor++) {
-        numId = "num" + factor;
-        textId = "text" + factor;
-        numValue = document.getElementById(numId).value;
-        textValue = document.getElementById(textId).value;
-        console.log(factor + ") num:", numValue, "text:", textValue)
-        // if either value is blank, don't use it
-        if (numValue && textValue) {
-            factorObj[numValue] = textValue;
+        if (num % 105 == 0){
+            audi += "FizzBuzzBoom";
+        }
+        else if (num % 35 == 0){
+            audi += "BuzzBoom";
+        }
+        else if (num % 21 == 0){
+            audi += "FizzBoom ";
+        }
+        else if (num % 15 == 0){
+            audi += "FizzBuzz ";
+        }
+        else if (num % 7 == 0){
+            audi += "Boom ";
+        }
+        else if (num % 5 == 0){
+            audi += "Buzz ";
+        }
+        else if (num % 5 == 0){
+            audi += "Fizz ";
+        } else {
+            audi += num +" ";
         }
     }
-    return factorObj;
+    return audi;
 }
+$
 
-function outputToPage(str) {
-    newEl = document.createElement("p");
-    newEl.innerHTML = str;
-    outputEl.appendChild(newEl);
-}
+var results = document.getElementById("output");
+var outty = document.createElement("p");
+outty.innerHTML = fizzBuzzBoom();
+results.appendChild(outty)
 
-// given a number and an object that looks like this:
-//      {3: "Fizz", 5: "Buzz", 7: "Boom"}
-// loops over the numbers and outputs the number and the matching text
-// for factors
-function fizzBuzzBoom(maxNums, factorObj) {
-    // iterate over all of out numbers
-    for (var num=0; num<maxNums; num++) {
-        debugger;
-        // reset output string
-        var outputStr = "";
-        // iterate over the factors we got from the html
-        for (var factor in factorObj) {
-            // check to see if this num is a multiple of factor
-            if (num % factor == 0) {
-                // if yes, than add the text to output string
-                outputStr += factorObj[factor];
-            }
-        }
-        // now if we have words in outputStr, format it like this " - FizzBuzz!"
-        if (outputStr) {
-            outputStr = " - " + outputStr + "!";
-        }
-        outputToPage(num.toString() + outputStr)
-    }
-}
+
 
