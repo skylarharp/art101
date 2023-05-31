@@ -40,7 +40,7 @@ $
 var results = document.getElementById("output");
 var outty = document.createElement("p");
 outty.innerHTML = fizzBuzzBoom();
-results.appendChild(outty)
+results.appendChild(outty);
 
 
 
